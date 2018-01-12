@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale-1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <title> Verhalenplanner NS </title>
+  </head>
+
+  <body>
+    <header>
+      <a href="index.html"><img class="logo" src="styles/Photo/ns_Logo.svg" alt="logo Nederlandse Spoorwegen"></a>
+      <h1>Verhalenplanner</h1>
+
+    <nav id="navi-bar">
+        <form>
+          <img class="vergrootglas" src="styles/Iconen/NSvergootglas.svg"><input id="zoekhoofd" for="search" type="text" name="search" placeholder="Zoeken..">
+        </form>
+        <ul>
+          <li id="weguitmenu"><a href="aanbevolen.html"><img  src="styles/Iconen/aanbevolen.svg" class="aanbevolenverhalen"  alt="Aanbevolen verhalen"><label>Aanbevolen</label></a></li>
+          <li id="weguitmenu"><a href="verhalenreeks.html"><img class="verhalenreeks" src="styles/Iconen/verhalenreeks.svg"  alt="Verhalenreeks"><label>Verhalenreeks</label></a></li>
+          <li><a href="verhalen.html"><img class="Bookicon" src="styles/Iconen/open-book.svg" alt="Verhalen"><label>Verhalen</label></a></li>
+          <li><a href="aanmelden-registeren.html"><img class="profielicon" src="styles/Iconen/NSprofiel2.svg" alt="Profiel"><label>Profiel</label></a></li>
+
+        </ul>
+      </nav>
+    </header>
+
+
+
+
+
+<h2>Verhalen</h2>
+<form class="formverhaal">
+ <fieldset>
+   <legend>Sorteren</legend>
+
+   <label>Populair naar minder populair
+      <input type="radio" name="state" value="Populair">
+   </label>
+
+
+    <label>Minder populair naar populair
+      <input type="radio" name="state" value="unpopulair">
+    </label>
+
+   <label>Kies hier de genre:</label>
+   <select name="genre">
+    <option value="Avontuur" selected>Avontuur</option>
+    <option value="Fantasie">Fantasie</option>
+    <option value="Westers">Westers</option>
+    <option value="liefde">Liefde</option>
+    <option value="griezelig">Griezelig</option>
+    <option value="sciencefiction">Sciencefiction</option>
+  </select>
+    <input class="nsblok" type="submit" name="submit" value="Zoeken" />
+ </fieldset>
+</form>
+
+<section class="grid">
+
+  <article class="item-a">
+    <header>
+      <a class="nsblok" href="gefrusteerd.html" >(50) – Gefrustreerd</a>
+    </header>
+    <div><img src="styles/Photo/Gefrustreerd.jpg" alt="Gefrustreerd"></div>
+    <footer>
+      <small>
+        <time datetime="2011-02-04" itemprop='datePublished'>12 april 2011</time>
+        <span class="heart">likes</span>
+      </small>
+    </footer>
+  </article>
+
+  <article class="item-b">
+    <header>
+      <a class="nsblok"href="droom.html">(3) – Droom</a>
+    </header>
+    <div><img src="styles/Photo/Droom-pagina.svg" alt="Droom pagina"></div>
+    <footer>
+      <small>
+        <time datetime="2011-02-04">4 februari 2011</time>
+        <span class="heart"></span>
+      </small>
+    </footer>
+  </article>
+
+  <article class="item-d">
+    <header>
+      <a class="nsblok" href="hongerwinter.html">(45) – Hongerwinter</a>
+    </header>
+    <div>
+      <img src="styles/Photo/Hongerwinter.jpg" alt="Hongerwinter pagina">
+    </div>
+    <footer>
+      <small>
+        <time datetime="2011-05-05"  >5 april 2011</time>
+        <span class="heart"></span>
+      </small>
+    </footer>
+  </article>
+
+  <article class="item-e">
+    <header>
+      <a class="nsblok" href="gefrusteerd.html" >(50) – Gefrustreerd</a>
+    </header>
+    <div><img src="styles/Photo/Gefrustreerd.jpg" alt="Gefrustreerd"></div>
+    <footer>
+      <small>
+        <time datetime="2011-02-04" itemprop='datePublished'>12 april 2011</time>
+        <span class="heart">likes</span>
+      </small>
+    </footer>
+  </article>
+
+  <article class="item-f">
+    <header>
+      <a class="nsblok"href="droom.html">(3) – Droom</a>
+    </header>
+    <div><img src="styles/Photo/Droom-pagina.svg" alt="Droom pagina"></div>
+    <footer>
+      <small>
+        <time datetime="2011-02-04">4 februari 2011</time>
+        <span class="heart"></span>
+      </small>
+    </footer>
+  </article>
+
+  <article class="item-g">
+    <header>
+      <a class="nsblok" href="gefrusteerd.html" >(50) – Gefrustreerd</a>
+    </header>
+    <div><img src="styles/Photo/Gefrustreerd.jpg" alt="Gefrustreerd"></div>
+    <footer>
+      <small>
+        <time datetime="2011-02-04" itemprop='datePublished'>12 april 2011</time>
+        <span class="heart">likes</span>
+      </small>
+    </footer>
+  </article>
+
+
+
+</section>
+<footer></footer>
+
+  </body>
+</html>

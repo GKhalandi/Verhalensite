@@ -1,0 +1,235 @@
+/* verhalenontwerp Hongerwinter  werkt alleen goed in safari*/
+p{
+  color:#fff;
+  -webkit-user-select: none;
+  -webkit-touch-callout:none;
+  -webkit-text-size-adjust: none;
+}
+
+
+@media (max-width:20em){
+  p{
+    font-size: 0.6em;
+    line-height: 1.6em;
+  }
+
+  #titelhongerwinter{
+    position: absolute;
+    top: 30vw;
+    left: -5vw;
+    width:120%;
+  }
+
+  #achtergrondhongerwinter{
+    display:none;
+  }
+
+  #achtergrondhongerwinter2{
+    position:relative;
+    display:contents;
+    width:100vw;
+    height:350vh;
+  }
+
+  #achtergrondhongerwinter4{
+    position:relative;
+    display:contents;
+    width:100vw;
+    height:350vh;
+  }
+
+  #hongerwinter-1{
+    position: absolute;
+    top: 83vw;
+    left:2em;
+  }
+
+  #hongerwinter-2{
+    position: absolute;
+    top:155vw;
+    left:5em;
+    width:18em;
+  }
+
+  #hongerwinter-3{
+    position: absolute;
+    top: 303vw;
+    left:5em;
+  }
+
+  #hongerwinter-4{
+    position: absolute;
+    top: 220vw;
+    left:0.5em;
+    width:18em;
+  }
+
+  #hongerwinter-5{
+    position: absolute;
+    top:392vw;
+    left:1em;
+    width:18em;
+  }
+
+  #hongerwinter-6{
+    position: absolute;
+    top: 480vw;
+    width:19em;
+    left:2em;
+  }
+
+  #hongerwinter-7{
+    position: absolute;
+    top:565vw;
+    left:1em;
+    width:20em;
+  }
+
+}
+
+@media (min-width:45em){
+  #titelhongerwinter{
+    position: absolute;
+    top: 24vw;
+    left: 50vw;
+    width:100%;
+    transform: translate(-50%, -50%);
+  }
+
+  #achtergrondhongerwinter2{
+    display:none;
+  }
+
+
+  #achtergrondhongerwinter{
+    display:contents;
+    width:60em;
+    z-index: 2;
+  }
+
+  P{
+    z-index:-2;
+  }
+
+
+  p{
+    font-size:1em;
+    line-height: 2em;
+    width:25em;
+    color:black;
+    transform: translate(-50%, -50%) rotateZ(-7deg);
+  }
+    #hongerwinter-1{
+      position: absolute;
+      top: 60vw;
+      left: 30em;
+      width: 35em;
+    }
+
+    #hongerwinter-2{
+      position: absolute;
+      top: 100vw;
+      left: 75em;
+    }
+
+    #hongerwinter-3{
+      position: absolute;
+      top: 105vw;
+      left:19em;
+      width:29em;
+    }
+
+    #hongerwinter-4{
+      position: absolute;
+      top: 140vw;
+      left: 30em;
+      width: 30em;
+    }
+
+    #hongerwinter-5{
+      position: absolute;
+      top: 180vw;
+      left: 20em;
+      width: 30em;
+    }
+
+    #hongerwinter-6{
+      position: absolute;
+      top: 215vw;
+      width: 35em;
+      left: 45em;
+    }
+
+    #hongerwinter-7{
+      position: absolute;
+      top: 260vw;
+      left: 19em;
+    }
+}
+
+
+@media (min-width:65em){
+  #titelhongerwinter{
+    position: absolute;
+    top: 20vw;
+    left: 50vw;
+    width:100%;
+    transform: translate(-50%, -50%);
+  }
+
+  #achtergrondhongerwinter{
+    width:60em;
+  }
+
+  p{
+    font-size: 0.8em;
+    line-height: 1.5em;
+    width:35em;
+    transform: translate(-50%, -50%) rotateZ(-7deg);
+  }
+
+    #hongerwinter-1{
+      position: absolute;
+      top: 50vw;
+      left: 20em;
+      width:35em;
+    }
+
+    #hongerwinter-2{
+      position: absolute;
+      top:73vw;
+      left:55em;
+      width:22em;
+    }
+
+    #hongerwinter-3{
+      position: absolute;
+      top: 115vw;
+      left:20em;
+    }
+
+    #hongerwinter-4{
+      position: absolute;
+      top: 135vw;
+      left:55em;
+      width:22em;
+    }
+
+    #hongerwinter-5{
+      position: absolute;
+      top:175vw;
+      left:22em;
+    }
+
+    #hongerwinter-6{
+      position: absolute;
+      top: 200vw;
+      left:55em;
+    }
+
+    #hongerwinter-7{
+      position: absolute;
+      top: 235vw;
+      left:20em;
+    }
+}

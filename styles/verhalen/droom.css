@@ -1,0 +1,372 @@
+/* ontwerp Droom */
+
+p{
+  line-height:1.4em;
+}
+.verhalen{
+  position: relative;
+  text-align: center;
+  font-size: 1em
+
+}
+
+@media (min-width: 20em){
+  .verhalen{
+    font-size:0.6em;
+  }
+
+  /* verhalenontwerp Droom */
+  #droomtitel{
+    position: absolute;
+    top: 2%;
+    left:14%;
+    width:78%;
+  }
+  #achtergronddroom{
+    width:190%
+  }
+
+  #Gif1,#Gif2,#Gif3,#Gif4,#Gif5,#Gif6,#Gif7,#Gif8,#Gif9,#Gif10,#Gif11{
+    display:none;
+  }
+
+
+  /*Eerste blok droom */
+  #plaatjedroom1{
+      position:relative;
+      width: 23em;
+    	height: 16em;
+      position: absolute;
+      top: 16%;
+      left: 51%;
+      transform: translate(-50%, -50%);
+    }
+    #droom-1 {
+      /* font-size:1em; */
+    	width: 20em;
+      position: absolute;
+      top: 12%;
+      left: 11%;
+    }
+
+    /*tweede blok droom */
+    #plaatjedroom2{
+      width: 44em;
+    	height: 37em;
+      position: absolute;
+      top: 36%;
+      left: 54%;
+      transform: translate(-50%, -50%);
+    }
+    #droom-2{
+      /* font-size: 0.8em; */
+      position: absolute;
+      width: 18em;
+      top: 28%;
+      left: 13%;
+    }
+
+    /*derde blok droom */
+    #plaatjedroom3{
+      width:35em;
+      height: 30em;
+      position: absolute;
+      top: 48%;
+      left: -30%;
+    }
+    #droom-3{
+      /* font-size: 0.8em; */
+      width: 23em;
+      position: absolute;
+      top: 59%;
+      left: 51%;
+      transform: translate(-50%, -50%) rotateZ(-15deg);
+    }
+
+    /*vierde blok droom */
+
+    #plaatjedroom4{
+      width:30em;
+      height:30em;
+      position: absolute;
+      top: 70%;
+      left: 2%;
+    }
+    #droom-4{
+      /* font-size: 0.8em; */
+      width:20em;
+      position: absolute;
+      top: 80%;
+      left: 15%;
+    }
+
+}
+
+@media (min-width:30em){
+  .verhalen{
+    font-size:0.7em;
+  }
+
+  /* verhalenontwerp Droom */
+  #droomtitel{
+    position: absolute;
+    top: 1%;
+    left:22%;
+    width:58%;
+  }
+
+  #achtergronddroom{
+    width:130%
+  }
+
+  #Gif1{
+    display:contents;
+    position: absolute;
+    top: 5%;
+    left:2%;
+    width:12em;
+  }
+
+  #Gif2{
+    display:contents;
+    position: absolute;
+    top: 5%;
+    left:74%;
+    width:16em;
+  }
+
+  #Gif3{
+    display:contents;
+    position: absolute;
+    top: 19%;
+    left:-4%;
+    width:16em;
+  }
+
+  #Gif4{
+    display:contents;
+    position: absolute;
+    top: 68%;
+    left:-4%;
+    width:16em;
+  }
+
+  #Gif5{
+    display:contents;
+    position: absolute;
+    top: 40%;
+    left:70%;
+    width:16em;
+  }
+  #Gif6{
+    display:contents;
+    position: absolute;
+    top: 45%;
+    left:-10%;
+    width:16em;
+  }
+
+  #Gif7{
+    display:contents;
+    position:absolute;
+    top: 24%;
+    left:73%;
+    width:12em;
+  }
+
+  #Gif8{
+    display:contents;
+    position:absolute;
+    top: 42%;
+    left:0%;
+    width:12em;
+  }
+  #Gif9{
+    display:contents;
+    position:absolute;
+    top: 65%;
+    left:60%;
+    width:18em;
+  }
+
+  #Gif10{
+    display:contents;
+    position:absolute;
+    top: 96%;
+    left:10%;
+    width:18em;
+  }
+
+  #Gif11{
+    display:contents;
+    position:absolute;
+    top: 90%;
+    left:70%;
+    width:16em;
+  }
+
+  /* Eerste deel droom */
+
+  #plaatjedroom1{
+      position:relative;
+      width: 30em;
+    	height: 19em;
+      position: absolute;
+      top: 18%;
+      left: 51%;
+      transform: translate(-50%, -50%);
+    }
+    #droom-1 {
+      /* font-size:1em; */
+    	width: 20em;
+      position: absolute;
+      top: 15%;
+      left: 32%;
+    }
+    /* tweede deel droom */
+    #plaatjedroom2{
+      width: 42em;
+    	height: 38em;
+      position: absolute;
+      top: 39%;
+      left: 52%;
+      transform: translate(-50%, -50%);
+    }
+    #droom-2{
+      position: absolute;
+      width: 14em;
+      top: 30%;
+      left: 32%;
+    }
+
+    /* derde deel droom */
+    #plaatjedroom3{
+      width:46em;
+      height: 30em;
+      position: absolute;
+      top: 49%;
+      left: 0%;
+    }
+    #droom-3{
+      width: 23em;
+      position: absolute;
+      top: 58%;
+      left: 49%;
+      transform: translate(-50%, -50%) rotateZ(-12deg);
+    }
+
+    /* vierde deel droom */
+    #plaatjedroom4{
+      width:36em;
+      height:36em;
+      position: absolute;
+      top: 70%;
+      left: 15%;
+    }
+    #droom-4{
+      width:20em;
+      position: absolute;
+      top: 79%;
+      left: 33%;
+    }
+
+
+@media (min-width:50em){
+  .verhalen{
+    font-size: 1em;
+  }
+
+
+  #achtergronddroom{
+    width:100%
+  }
+
+  /* verhalenontwerp Droom */
+  #droomtitel{
+    position: absolute;
+    top: 2%;
+    left: 25%;
+    width:50%;
+    }
+
+    /*  Gifs boven*/
+
+    #Gif1{
+      display:contents;
+      position: absolute;
+      top: 1%;
+      left:2%;
+      width:12em;
+    }
+
+
+    /* eerste deel droom */
+  #plaatjedroom1{
+    position:relative;
+    width: 28em;
+  	height: 15em;
+    position: absolute;
+    top: 17%;
+    left: 58%;
+    transform: translate(-50%, -50%);
+  }
+  #droom-1 {
+    font-size: 0.8em;
+  	width: 30em;
+    position: absolute;
+    top: 15%;
+    left: 38%;
+  }
+
+  /* tweede deel droom */
+  #plaatjedroom2{
+    width: 35em;
+  	height: 33em;
+    position: absolute;
+    top: 35%;
+    left: 54%;
+    transform: translate(-50%, -50%);
+  }
+  #droom-2{
+    font-size: 0.8em;
+    position: absolute;
+    width: 15em;
+    top: 29%;
+    left: 40%;
+  }
+
+  /* Nederlandse deel droom */
+  #plaatjedroom3{
+    width: 39em;
+    height:24em;
+    position: absolute;
+    top: 48%;
+    left: 11%;
+  }
+  #droom-3{
+    /* font-size: 0.8em; */
+    width: 28em;
+    position: absolute;
+    top: 56%;
+    left: 47%;
+    transform: translate(-50%, -50%) rotateZ(-12deg);
+  }
+
+  /* vierde deel droom */
+  #plaatjedroom4{
+    width:30em;
+    height:30em;
+    position: absolute;
+    top: 67%;
+    left: 26%;
+  }
+  #droom-4{
+    /* font-size: 0.8em; */
+    width:20em;
+    position: absolute;
+    top: 75%;
+    left: 36%;
+  }
+
+
+}

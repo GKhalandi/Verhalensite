@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale-1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <title> Verhalenplanner Log in </title>
+  </head>
+
+  <body>
+    <header>
+      <a href="index.html"><img class="logo" src="styles/Photo/ns_Logo.svg" alt="logo Nederlandse Spoorwegen"></a>
+      <h1>Verhalenplanner</h1>
+      <nav id="navi-bar">
+          <form>
+            <img class="vergrootglas" src="styles/Iconen/NSvergootglas.svg"><input id="zoekhoofd" for="search" type="text" name="search" placeholder="Zoeken..">
+          </form>
+          <ul>
+            <li id="weguitmenu"><a href="aanbevolen.html"><img  src="styles/Iconen/aanbevolen.svg" class="aanbevolenverhalen"  alt="Aanbevolen verhalen"><label>Aanbevolen</label></a></li>
+            <li id="weguitmenu"><a href="verhalenreeks.html"><img class="verhalenreeks" src="styles/Iconen/verhalenreeks.svg"  alt="Verhalenreeks"><label>Verhalenreeks</label></a></li>
+            <li><a href="verhalen.html"><img class="Bookicon" src="styles/Iconen/open-book.svg" alt="Verhalen"><label>Verhalen</label></a></li>
+            <li><a href="aanmelden-registeren.html"><img class="profielicon" src="styles/Iconen/NSprofiel2.svg" alt="Profiel"><label>Profiel</label></a></li>
+
+          </ul>
+        </nav>
+    </header>
+
+  <section class="aanmeld-formulier">
+   <h2>Log in NS verhalenplanner</h2>
+
+    <form>
+     <fieldset>
+         <label> E-mailadres
+          <input type="email" name="email-address" placeholder="name@domain.com" required>
+         </label>
+
+        <label>Wachtwoord
+          <input type="password" name="password" required>
+        </label>
+
+        <input type="submit" name="submit" value="Login">
+
+        <label id="remember">Blijf ingelogd
+          <input type="checkbox" name="remember">
+        </label>
+
+        <a class="knop">Nog geen account?</a>
+
+     </fieldset>
+   </form>
+  </section>
+
+
+  <!-- <div id="aanmeldform"> -->
+    <section class="aanmeld-formulier hidden">
+     <h2>Aanmelden NS Planner</h2>
+
+      <form>
+       <fieldset>
+           <label>Naam
+            <input type="text" name="username" placeholder="Jan" required>
+           </label>
+
+           <label>Achternaam
+            <input type="text" name="username" placeholder="Janssen" required>
+           </label>
+
+           <label>E-mailadres
+             <input type="email" name="email-address" placeholder="name@domain.com" required />
+           </label>
+
+           <label>Vrouw
+            <input type="radio" name="gender" value="woman" checked>
+           </label>
+
+           <label>Man
+            <input id="man" type="radio" name="gender" value="man">
+           </label>
+
+           <label>Voer hier een foto in
+            <input type="file" name="file">
+           </label>
+
+
+           <label>Wachtwoord
+              <input type="password" name="password" required>
+           </label>
+
+
+           <label>Herhaal Wachtwoord
+            <input id="password2" type="password" name="password" required>
+           </label>
+
+           <input type="submit" name="submit" value="Aanmelden">
+
+       </fieldset>
+     </form>
+
+    </section>
+  <!-- </div> -->
+
+
+  <script src="./styles/JS/aanmeldformulier.js"></script>
+    </body>
+
+</html>

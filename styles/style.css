@@ -1,0 +1,654 @@
+/*generieke stijl*/
+@font-face{
+    font-family:'nssans-regular';
+  src: url('nssans-regular.ttf'); /* IE9 Compat Modes */
+  src: url('nssans-regular.ttf') format('ttf'), /* Super Modern Browsers */
+       url('nssans-regular.ttf') format('ttf'), /* Pretty Modern Browsers */
+}
+
+@font-face{
+  font-family:'nssans-bold';
+src: url('nssans-bold.otf'); /* IE9 Compat Modes */
+src: url('nssans-bold.otf') format('otf'), /* Super Modern Browsers */
+     url('nssans-bold.otf') format('otf'), /* Pretty Modern Browsers */
+}
+
+/* hoofdlayout*/
+*{
+  box-sizing: border-box;
+}
+
+html{
+  font-family: 'nssans-regular';
+  font-size:1.4em; /*basis fontgrootte*/
+}
+
+body{
+  margin:0;
+  background-color: #E6E6E9;
+}
+
+h2{
+  margin-top: 0;
+  color: #003082;
+  font-size: 1.7em;
+  padding:0.7em;
+}
+
+small{
+  font-weight: 0.5em;
+  font-size:0.7em;
+  color:#ffc917;
+}
+
+article>div>img {
+  object-fit: contain;
+  width:100%x;
+  height:100%;
+}
+
+div{
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+
+}
+article{
+  /* display: flex; */
+  background: #fff;
+  padding:1.3rem;
+  position: relative;
+  padding:0;
+  overflow:hidden;
+  min-height: 9em;
+}
+
+article>header{
+  position:absolute;
+  bottom: 0.5em;
+  margin:0.5em;
+  z-index:2;
+}
+
+article>footer{
+  position:absolute;
+  top: 1em;
+  color:white;
+  margin:0.5em;
+  z-index:2;
+}
+
+
+/*navigatie*/
+body>header{
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  display:flex;
+}
+header > *{
+  /* flex: 1; */
+  justify-content:flex-end;
+  align-items: baseline;
+  margin-top:0.5em;
+  margin-bottom:0.5em;
+}
+header>a{
+  z-index:2;
+}
+
+.logo{
+  height:1em;
+  padding-left: 0.8em;
+  padding-top: .125rem;
+}
+
+nav,ul,form{
+  display:flex;
+  font-size: 1em;
+}
+
+nav a{
+  text-decoration: none;
+  color: #003082;
+  font-size: 0.8em;
+}
+
+@media (min-width:20em) {
+  header > h1{
+    display:none;
+  }
+
+  h2{
+    font-size: 1.2em;
+  }
+
+  section.grid, section.grid-aanbevolen{
+    display:grid;
+    grid-template-columns:1fr;
+    padding:0.5em;
+    transition:1s;
+  }
+
+  /*background moet alleen onderwerken?! maar doet boven ook waardoorlogo ns verdwijnt*/
+  #navi-bar{
+   background-color:#fff;
+   height: 2.4em;
+   width: 100%;
+   padding:0.2em;
+   margin:0;
+   position: fixed;
+   bottom:0;
+   z-index: 4;
+  }
+
+  .Bookicon{
+    height:1.3em;
+    width: 1.4em;
+    margin-right: 0.4em;
+
+  }
+  .profielicon{
+    height:1.3em;
+    margin-right: 0.4em;
+  }
+  .aanbevolenverhalen{
+    height:1.3em;
+    margin-right: 0.4em;
+  }
+  .verhalenreeks{
+    height:1.3em;
+    margin-right: 0.4em;
+  }
+
+  nav a{
+    padding: 0.9rem;
+  }
+
+  #zoekhoofd{
+    display:none;
+  }
+  #aanbevolen{
+    display:none;
+  }
+
+  .vergrootglas{
+    display:none;
+  }
+
+  nav > ul > li > a > label{
+    display:block;
+    font-size:0.7em;
+    padding:0.5em
+  }
+  article{
+    margin:0.4em;
+  }
+
+  .nsblok{
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    background-color: #0079d3;
+    box-shadow: inset 0 -0.125rem 0 #005ca0;
+    text-align: center;
+    line-height: 1rem;
+    font-size: 0.5rem;
+    border: none;
+    text-decoration: none;
+    padding: 0.5rem;
+    padding-left: 0.1em;
+    margin:0.2em;
+  }
+
+  .nsblok:active{
+    transform: scale(0.9, 0.9);
+
+  }
+
+  .aanmeld-formulier{
+    width:85%;
+    margin:auto;
+    margin-top: 2em;
+    margin-bottom: 4em;
+    padding: 1.3em 1em 2.3em 1em;
+    background: linear-gradient(rgba(255,201,23,.9) 0,#ffc917);
+  }
+
+  /* .aanmeld-formulier a{
+    margin:0.3em;
+    display: block;
+  } */
+
+  .aanmeld-formulier h2{
+    font-size: 1.3rem;
+  }
+
+  .aanmeld-formulier > form {
+    width: 90%;
+    margin: auto;
+    font-size: 1em;
+    line-height:1.5em;
+    font-size: 0.7rem;
+  }
+
+  input[type=text], input[type=email], input[type=password] {
+    width: 100%;
+    height: 1.2rem;
+    margin: 0em 2em 1em 0em;
+    background-color: white;
+  }
+
+  input[type=radio]{
+    display: block;
+    margin-bottom: 0.2em;
+  }
+
+  input[type=file]{
+    width:100%;
+    margin-bottom: 1em;
+  }
+
+  /* states */
+
+  .aanmeld-formulier> input[type=text]:valid, input[type=email]:valid, input[type=password]:valid {
+    border:0.1em solid green;
+  }
+
+  .aanmeld-formulier>input[type=text]:invalid, input[type=email]:invalid, input[type=password]:invalid {
+    border:0.1em solid red;
+  }
+
+  input:focus {
+  transform: scale(1.02, 1.02);
+}
+
+  section.hidden{
+    display:none;
+  }
+
+  a#knop:active{
+    color:blue;
+  }
+
+  /* .aanmeldform {
+    opacity: 0;
+    transition: 0.3s;
+  }
+  .aanmeldform, .aanmelden {
+    opacity: 1;
+  } */
+
+
+
+
+
+
+
+
+
+
+/*TABLET*/
+
+@media (min-width:32em) {
+  section.grid, section.grid-aanbevolen{
+    grid-template-columns:1fr 1fr;
+    grid-column-gap: 0.4em;
+    grid-row-gap: 0.4em;
+    transition:0.9s;
+  }
+
+  h1{
+    font-size: 1.1em;
+    color: #003082;
+    margin-right: auto;
+    z-index: 2;
+  }
+
+  h2{
+    font-size: 1.5em;
+  }
+
+  #aanbevolen{
+    display:contents;
+  }
+
+
+  section.form-index{
+    grid-column:1;
+    grid-row:2;
+  }
+
+  .item-a{
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .item-b{
+    grid-column:1;
+    grid-row:3;
+  }
+  .item-c{
+    grid-column:2;
+    grid-row:3;
+  }
+  .item-d{
+    grid-column:2;
+    grid-row:1;
+  }
+
+  .item-d>img{
+    max-width: 10%;
+  }
+  /* blok in hoofdscherm*/
+  .item-e{
+    grid-column:2;
+    grid-row:3;
+  }
+/*NAVIGATIE*/
+  nav > ul > li > a > label{
+    display:inline;
+    font-size:0.9em;
+  }
+
+  #navi-bar{
+    position:absolute;
+    background: none;
+    top:0;
+    z-index:0;
+  }
+
+  nav>ul>form>input[type=text]{
+    display:inline;
+  }
+
+  .Bookicon{
+    height:1.3em;
+    width: 1.4em;
+  }
+
+  .profielicon{
+    height:1.3em;
+    margin-right: 0.2;
+  }
+
+  #weguitmenu{
+    display:none;
+  }
+  #zoekhoofd{
+    display:contents;
+    background-color: white;
+  }
+  .vergrootglas{
+    display:contents;;
+    height:1em;
+    width: 1em;
+    margin-right: 0.4em;
+  }
+
+  /*formulier aanmeldpagina */
+  .aanmeld-formulier{
+    width:70%;
+  }
+
+  .aanmeld-formulier > form {
+    width:90%;
+  }
+
+}
+
+/*DESKTOP*/
+
+@media (min-width:50em){
+
+  h2{
+    font-size: 1.2em;
+  }
+  /*grid site*/
+  section.grid, section.grid-aanbevolen{
+    grid-template-columns:1fr 1fr 1fr;
+    grid-column-gap: 1vw;
+    grid-row-gap: 1vw;
+    padding:2em;
+    transition:0.9s;
+  }
+
+  section.form-index{
+    grid-column: 2 / span 3;
+    grid-row:1;
+  }
+
+  .item-a{
+    grid-column: 1 / 2;
+    grid-row:1/ span 2;
+  }
+
+  .item-b{
+    grid-column: 2 / 3;
+    grid-row:1/ span 2;
+  }
+  .item-c{
+    grid-column: 3/ 4;
+    grid-row: 2;
+  }
+  .item-d{
+    grid-column: 3/ 4;
+    grid-row: 1;
+  }
+  /* blok in hoofdscherm*/
+  .item-e{
+    grid-column: 1/ 2;
+    grid-row: 3;
+  }
+  .item-f{
+    grid-column: 2/ 3;
+    grid-row: 3;
+  }
+  .item-g{
+    grid-column: 3/ 4;
+    grid-row: 3;
+  }
+
+  nav > ul > li > a > label{
+    font-size:1em;
+  }
+
+  /*formulier aanmeldpagina */
+  .aanmeld-formulier{
+    width:50%;
+  }
+
+  .aanmeld-formulier > form {
+    width:65%;
+  }
+}
+
+/* formulier index*/
+.form-index{
+  background: linear-gradient(rgba(255,201,23,.9) 0,#ffc917);
+  padding:1.4rem;
+  padding-bottom: 2.5rem;
+  color: #003082;
+  font-size:0.8em;
+}
+
+.form-index>fieldset>legend{
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+
+.form-index>fieldset>.nsblok{
+  font-size:0.8em;
+  border: none;
+  margin-top: 1em;
+}
+
+.form-index>fieldset>p{
+  margin-bottom: 1em;
+}
+
+/*knop aanmeldformulier*/
+.aanmeld-formulier input[type=submit] {
+    background-color: #0079d3;
+    box-shadow: inset 0 -0.125rem 0 #005ca0;
+    color: white;
+    padding: 1.2em 1.5em;
+    margin: 1.2em;
+    border: none;
+    float:left;
+    transition: box-shadow .15s ease-in-out;
+}
+
+.aanmeld-formulier input[type=submit]:hover{
+    color: #fff;
+    cursor: pointer;
+    box-shadow: inset 0 -3.125rem 0 #005ca0;
+}
+
+/* form verhalenpagina */
+.formverhaal{
+  background: linear-gradient(rgba(255,201,23,.9) 0,#ffc917);
+  padding:1.4rem;
+  color: #003082;
+  font-size:0.7em;
+}
+
+.formverhaal>fieldset>legend{
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+
+.formverhaal>fieldset>.nsblok{
+  display:inline-block;
+  font-size:0.7em;
+  border: none;
+  margin-top: 0.5em;
+}
+
+.formverhaal>fieldset>label>input[type=radio]{
+  display:inline-block;
+  margin-right:1.5em;
+  margin-bottom:1.5em;
+}
+
+
+
+/*blok blauw ns
+bron: https://www.ns.nl
+gemaakt door ... */
+
+.nsblok{
+  display:block;
+  position: relative;
+  color: #fff;
+  line-height: 1.4rem;
+  font-size: 1rem;
+  border: none;
+  padding: 0.5rem;
+  padding-left: 1em;
+  transition: box-shadow .15s ease-in-out;
+
+}
+
+.nsblok:hover{
+      color: #fff;
+      cursor: pointer;
+      box-shadow: inset 0 -3.125rem 0 #005ca0;
+  }
+
+
+/*hartje
+bron: https://css-tricks.com/examples/ShapesOfCSS/
+gemaakt door Nicolas Gallagher*/
+
+span{
+  float:right;
+}
+
+.heart {
+    position: relative;
+    width: 100px;
+    height: 90px;
+}
+.heart:before,
+.heart:after {
+    position: absolute;
+    content: "";
+    left: 20px;
+    top: 0;
+    width: 20px;
+    height: 33px;
+    background: red;
+    -moz-border-radius: 20px 20px 0 0;
+    border-radius: 20px 20px 0 0;
+            transform: rotate(-45deg);
+            transform-origin: 0 100%;
+}
+.heart:after {
+    left: 0;
+            transform: rotate(45deg);
+            transform-origin :100% 100%;
+}
+
+
+/* rangeSlider code van https://css-tricks.com/value-bubbles-for-range-inputs/           met aanpassingen*/
+/*staaf*/
+#range-slider__range {
+  width: calc(100% - (7em));
+  height: 0.5em;
+  border-radius: 0.2em;
+  background: #d7dcdf;
+  outline: none;
+  padding: 0;
+  margin: 0;
+}
+#range-slider__range::-webkit-slider-thumb {
+
+  width: 10em;
+  height: 10em;
+  border-radius: 50%;
+  background: #2c3e50;
+  cursor: pointer;
+  -webkit-transition: background .15s ease-in-out;
+  transition: background .15s ease-in-out;
+}
+
+/*bolletje*/
+#range-slider__range::-moz-range-thumb {
+  width: 1.5em;
+  height: 1.5em;
+  border: 0;
+  border-radius: 50%;
+  background: #0079d3;
+  cursor: pointer;
+  -webkit-transition: background .15s ease-in-out;
+  transition: background .15s ease-in-out;
+}
+/*achtergrond bolletje */
+#range-slider__range::-moz-range-thumb:hover {
+  background: #005ca0;
+}
+#range-slider__range:active::-moz-range-thumb {
+  background: #005ca0;
+}
+
+/*waarde*/
+#range-slider__value {
+  display: inline-block;
+  position: relative;
+  width: 2.5em;
+  color: #fff;
+  line-height: 1.2em;
+  text-align: center;
+  border-radius: 0.2em;
+  background: #005ca0;
+  padding: 0.2em 0.2em;
+  margin-left: 0.4em;
+}
+
+::-moz-range-track {
+  background: #d7dcdf;
+  border: 0;
+}
