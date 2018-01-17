@@ -6,34 +6,43 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="styles/reset.css" />
     <link rel="stylesheet" href="styles/style.css" />
-    <!-- link voor de sterren-->
+    <!-- Font awesome voor verhalenfooter-->
+    <link rel="stylesheet" href="styles/css/font-awesome.css" />
+
     <title> Verhalenplanner NS </title>
   </head>
 
   <body>
 
 <header>
-  <a href="index.html"><img class="logo" src="styles/Photo/ns_Logo.svg" alt="logo Nederlandse Spoorwegen"></a>
-  <h1>Verhalenplanner</h1>
+  <a href="index.html">
+    <img class="logo" src="styles/Photo/ns_Logo.svg" alt="logo Nederlandse Spoorwegen">
+  </a>
 
-<nav id="navi-bar">
+  <nav >
     <form>
-      <img class="vergrootglas" src="styles/Iconen/NSvergootglas.svg"><input id="zoekhoofd" for="search" type="text" name="search" placeholder="Zoeken..">
+      <img class="vergrootglas" src="styles/Iconen/NSvergootglas.svg">
+      <input id="directsearch" type="text" name="search" placeholder="Zoeken..">
+      <ul id="searchdropdown">
+        <li><strong>Gefr</strong>ustreerd</li>
+        <li><strong>Gef</strong>aald</li>
+        <li><strong>Ge</strong>flopt</li>
+      </ul>
     </form>
     <ul>
       <li id="weguitmenu"><a href="aanbevolen.html"><img  src="styles/Iconen/aanbevolen.svg" class="aanbevolenverhalen"  alt="Aanbevolen verhalen"><label>Aanbevolen</label></a></li>
       <li id="weguitmenu"><a href="verhalenreeks.html"><img class="verhalenreeks" src="styles/Iconen/verhalenreeks.svg"  alt="Verhalenreeks"><label>Verhalenreeks</label></a></li>
       <li><a href="verhalen.html"><img class="Bookicon" src="styles/Iconen/open-book.svg" alt="Verhalen"><label>Verhalen</label></a></li>
       <li><a href="aanmelden-registeren.html"><img class="profielicon" src="styles/Iconen/NSprofiel2.svg" alt="Profiel"><label>Profiel</label></a></li>
-
     </ul>
   </nav>
 </header>
 
-<h2>Populaire verhalen</h2>
+<main>
+<h1>Populaire verhalen</h1>
 <section class="grid">
 
-  <article class="item-a">
+  <article>
         <header>
           <a class="nsblok" href="gefrusteerd.html" >(50) – Gefrustreerd</a>
         </header>
@@ -41,35 +50,34 @@
         <footer>
           <small>
             <time datetime="2011-02-04" itemprop='datePublished'>12 april 2011</time>
-            <span class="heart">likes</span>
+            <p><i class="fa fa-heart-o"></i>30</p>
           </small>
         </footer>
   </article>
 
-  <article class="item-b">
+  <article>
     <header>
       <a class="nsblok"href="droom.html">(3) – Droom</a>
     </header>
-    <div><img src="styles/Photo/Droom-pagina.svg" alt="Droom pagina"></div>
-    <footer>
+          <div><img src="styles/Photo/Droom-pagina.svg" alt="Droom pagina"></div>    <footer>
       <small>
         <time datetime="2011-02-04">4 februari 2011</time>
-        <span class="heart"></span>
+        <p><i class="fa fa-heart-o"></i>18</p>
       </small>
     </footer>
   </article>
 
-  <article class="item-c">
+  <article>
     <header>
       <a class="nsblok" href="hongerwinter.html">(45) – Hongerwinter</a>
     </header>
     <div>
-      <img src="styles/Photo/Hongerwinter.jpg" alt="Hongerwinter pagina">
+      <img src="styles/Photo/Hongerwinter-Homepage.png" alt="Hongerwinter pagina">
     </div>
     <footer>
       <small>
-        <time datetime="2011-05-05"  >5 april 2011</time>
-        <span class="heart"></span>
+        <time datetime="2011-05-05">5 april 2011</time>
+        <p><i class="fa fa-heart-o"></i>26</p>
       </small>
     </footer>
   </article>
@@ -105,10 +113,10 @@
 
 <section id="aanbevolen">
 
-<h2>Aanbevolen door andere</h2>
+<h1>Aanbevolen door andere</h1>
 <section class="grid-aanbevolen">
 
-  <article class="item-a">
+  <article>
     <header>
       <a class="nsblok" href="gefrustreerd.html">(50) – Gefrustreerd</a>
     </header>
@@ -116,12 +124,12 @@
     <footer>
       <small>
         <time datetime="2011-02-04"  >12 april 2011</time>
-        <span class="heart"></span>
+        <p><i class="fa fa-heart-o"></i>18</p>
       </small>
     </footer>
   </article>
 
-  <article class="item-b">
+  <article>
     <header>
       <a class="nsblok"href="droom.html">(3) – Droom</a>
     </header>
@@ -129,27 +137,27 @@
     <footer>
       <small>
         <time datetime="2011-02-04">4 februari 2011</time>
-        <span class="heart"></span>
+        <p><i class="fa fa-heart-o"></i>18</p>
       </small>
     </footer>
   </article>
 
-  <article class="item-d">
+  <article>
     <header>
       <a class="nsblok" href="hongerwinter.html">(45) – Hongerwinter</a>
     </header>
     <div>
-      <img src="styles/Photo/Hongerwinter.jpg" alt="Hongerwinter pagina">
+      <img src="styles/Photo/Hongerwinter-Homepage.png" alt="Hongerwinter pagina">
     </div>
     <footer>
       <small>
         <time datetime="2011-05-05"  >5 april 2011</time>
-        <span class="heart"></span>
+        <p><i class="fa fa-heart-o"></i>18</p>
       </small>
     </footer>
   </article>
 
-  <article class="item-e">
+  <article>
     <header>
       <a class="nsblok"href="droom.html">(3) – Droom</a>
     </header>
@@ -157,7 +165,7 @@
     <footer>
       <small>
         <time datetime="2011-02-04">4 februari 2011</time>
-        <span class="heart"></span>
+        <p><i class="fa fa-heart-o"></i>18</p>
       </small>
     </footer>
   </article>
@@ -165,6 +173,8 @@
 </section>
 
 </section>
+</main>
+<script src="./styles/JS/Autofill.js"></script>
 <script src="./styles/JS/slider.js"></script>
   </body>
 </html>

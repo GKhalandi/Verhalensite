@@ -1,4 +1,7 @@
-/* verhalenontwerp Hongerwinter  werkt alleen goed in safari*/
+/* verhalenontwerp Hongerwinter  werkt alleen goed in safari
+
+Met dank aan stijn werkt het uitvegen op 2 schermen (code is van de website gebruikt, aangepast en herschreven vo
+voor hongerwinter. Er is een database en script gekoppeld aan het verhaal zodat het werkt.)*/
 p{
   color:#fff;
   -webkit-user-select: none;
@@ -6,6 +9,54 @@ p{
   -webkit-text-size-adjust: none;
 }
 
+button.liken{
+    position: absolute;
+    background-color:#ff4c4c;
+    border: none;
+    color:#fff;
+    padding: 0.45em;
+    /* width:6em; */
+    cursor: pointer;
+    line-height: 1.1em;
+    font-size: 1em;
+    z-index:4;
+}
+button.liken:active{
+    position: absolute;
+    transform: scale(0.9, 0.9);
+}
+img#heartje{
+  float:left;
+  width:1.1em;
+  height:1.1em;
+  margin-right: 0.45em;
+}
+
+button.Add{
+    position: absolute;
+    background-color:#00BFFF;
+    border: none;
+    color: white;
+    padding: 0.35em;
+    cursor: pointer;
+    font-size: 1em;
+    left:30%;
+    z-index:4;
+}
+button.Add:active{
+    position: absolute;
+    transform: scale(0.9, 0.9);
+}
+img#toevoegen{
+  float:left;
+  width:1.3em;
+  height:1.3em;
+  margin-right: 0.35em;
+}
+
+.isLiked {
+  background-color: #003082 !important;
+}
 
 @media (max-width:20em){
   p{

@@ -1,6 +1,6 @@
 /*code van W3schools*/
-var slider = document.getElementsByID("range-slider__range");
-var output = document.getElementsByID("range-slider__value");
+var slider = document.querySelector("#range-slider__range");
+var output = document.querySelector("#range-slider__value");
 output.innerHTML = slider.value;
 
 slider.oninput = function () {

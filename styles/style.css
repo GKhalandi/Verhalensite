@@ -28,58 +28,12 @@ body{
   background-color: #E6E6E9;
 }
 
-h2{
+h1{
   margin-top: 0;
   color: #003082;
   font-size: 1.7em;
   padding:0.7em;
 }
-
-small{
-  font-weight: 0.5em;
-  font-size:0.7em;
-  color:#ffc917;
-}
-
-article>div>img {
-  object-fit: contain;
-  width:100%x;
-  height:100%;
-}
-
-div{
-  position:absolute;
-  top:0;
-  bottom:0;
-  left:0;
-  right:0;
-
-}
-article{
-  /* display: flex; */
-  background: #fff;
-  padding:1.3rem;
-  position: relative;
-  padding:0;
-  overflow:hidden;
-  min-height: 9em;
-}
-
-article>header{
-  position:absolute;
-  bottom: 0.5em;
-  margin:0.5em;
-  z-index:2;
-}
-
-article>footer{
-  position:absolute;
-  top: 1em;
-  color:white;
-  margin:0.5em;
-  z-index:2;
-}
-
 
 /*navigatie*/
 body>header{
@@ -116,12 +70,63 @@ nav a{
   font-size: 0.8em;
 }
 
-@media (min-width:20em) {
-  header > h1{
-    display:none;
-  }
+nav a:hover{
+  color: #ffc917;
+  font-size:0.85em;
+}
 
-  h2{
+/* stijl artikel */
+
+article{
+  background: #fff;
+  padding:1.3rem;
+  position: relative;
+  padding:0;
+  overflow:hidden;
+  min-height: 9em;
+}
+
+article>header{
+  position:absolute;
+  bottom: 0.5em;
+  margin:0.5em;
+  z-index:2;
+}
+
+article>div>img {
+  object-fit: contain;
+  height:100%;
+}
+
+div{
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+
+}
+
+article>footer{
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  padding:0.2em;
+  z-index:2;
+  background:white;
+}
+article>footer>small{
+  color:#003082;
+  font-size: 0.6em;
+  padding-bottom: 1em;
+  display:flex;
+  justify-content: space-between;
+  align-items:baseline;
+}
+
+@media (min-width:20em) {
+  h1{
     font-size: 1.2em;
   }
 
@@ -133,7 +138,7 @@ nav a{
   }
 
   /*background moet alleen onderwerken?! maar doet boven ook waardoorlogo ns verdwijnt*/
-  #navi-bar{
+header>nav{
    background-color:#fff;
    height: 2.4em;
    width: 100%;
@@ -143,37 +148,40 @@ nav a{
    bottom:0;
    z-index: 4;
   }
-
-  .Bookicon{
-    height:1.3em;
-    width: 1.4em;
-    margin-right: 0.4em;
-
-  }
+  /* Iconen voor navigatie */
   .profielicon{
     height:1.3em;
-    margin-right: 0.4em;
+    margin-left: 1em;
+  }
+  .Bookicon{
+    width: 1.4em;
+    height:1.3em;
+    margin-left: 1em;
   }
   .aanbevolenverhalen{
+    padding-left: 0.65em;
     height:1.3em;
-    margin-right: 0.4em;
+    margin-left: 1em;
   }
   .verhalenreeks{
+    padding-left: 0.8em;
     height:1.3em;
-    margin-right: 0.4em;
+    margin-left: 1em;
   }
 
-  nav a{
+  nav>a{
     padding: 0.9rem;
   }
 
-  #zoekhoofd{
+  nav>form>input[type='text']{
+    display:none;
+  }
+  #searchdropdown{
     display:none;
   }
   #aanbevolen{
     display:none;
   }
-
   .vergrootglas{
     display:none;
   }
@@ -181,7 +189,8 @@ nav a{
   nav > ul > li > a > label{
     display:block;
     font-size:0.7em;
-    padding:0.5em
+    padding: 0.65em;
+    margin-right: 0.1em;
   }
   article{
     margin:0.4em;
@@ -194,18 +203,25 @@ nav a{
     background-color: #0079d3;
     box-shadow: inset 0 -0.125rem 0 #005ca0;
     text-align: center;
-    line-height: 1rem;
-    font-size: 0.5rem;
+    line-height: 1.4rem;
+    font-size: 1rem;
     border: none;
     text-decoration: none;
     padding: 0.5rem;
-    padding-left: 0.1em;
     margin:0.2em;
+    color: white;
+    padding-left: 1em;
+    transition: box-shadow .15s ease-in-out;
   }
+
+  .nsblok:hover{
+        color: #fff;
+        cursor: pointer;
+        box-shadow: inset 0 -3.125rem 0 #005ca0;
+    }
 
   .nsblok:active{
     transform: scale(0.9, 0.9);
-
   }
 
   .aanmeld-formulier{
@@ -217,12 +233,7 @@ nav a{
     background: linear-gradient(rgba(255,201,23,.9) 0,#ffc917);
   }
 
-  /* .aanmeld-formulier a{
-    margin:0.3em;
-    display: block;
-  } */
-
-  .aanmeld-formulier h2{
+  .aanmeld-formulier h1{
     font-size: 1.3rem;
   }
 
@@ -232,74 +243,80 @@ nav a{
     font-size: 1em;
     line-height:1.5em;
     font-size: 0.7rem;
+    display: block;
+  }
+  .aanmeld-formulier > a{
+    font-size: 0.6em;
+  }
+  .aanmeld-formulier > form > fieldset > legend{
+    font-size: 1.2em;
+    margin-bottom: 0.3em;
+    color:#003082;
   }
 
-  input[type=text], input[type=email], input[type=password] {
+  input[type='text'], input[type='email'], input[type='password'] {
     width: 100%;
     height: 1.2rem;
     margin: 0em 2em 1em 0em;
     background-color: white;
   }
 
-  input[type=radio]{
+  input[type='radio']{
     display: block;
     margin-bottom: 0.2em;
   }
 
-  input[type=file]{
+  input[type='file']{
     width:100%;
     margin-bottom: 1em;
   }
 
   /* states */
 
-  .aanmeld-formulier> input[type=text]:valid, input[type=email]:valid, input[type=password]:valid {
-    border:0.1em solid green;
+  .aanmeld-formulier> input[type='text']:valid, input[type='email']:valid, input[type='password']:valid {
+    border:0.1em solid lightgreen;
   }
 
-  .aanmeld-formulier>input[type=text]:invalid, input[type=email]:invalid, input[type=password]:invalid {
+  .aanmeld-formulier>input[type='text']:invalid, input[type='email']:invalid, input[type='password']:invalid {
     border:0.1em solid red;
   }
 
   input:focus {
   transform: scale(1.02, 1.02);
 }
-
-  section.hidden{
-    display:none;
+/* verdwijnen en verschijnen section in aanmeldformulier*/
+  div#aanmeldform{
+    top: 19em;
+  }
+  a#ACTIVEform{
+    display:inline;
   }
 
-  a#knop:active{
+  a#ACTIVEform:active{
     color:blue;
   }
 
-  /* .aanmeldform {
+  div#aanmeldform {
     opacity: 0;
-    transition: 0.3s;
+    transition: 0.5s;
   }
-  .aanmeldform, .aanmelden {
+  div#aanmeldform.aanmelden {
     opacity: 1;
-  } */
+  }
+}
 
-
-
-
-
-
-
-
-
+@media (max-width:32em) {
+  .formverhaal{
+    display:inline-block;
+  }
+  .formverhaal>fieldset{
+    padding-bottom:2em;
+  }
+}
 
 /*TABLET*/
 
 @media (min-width:32em) {
-  section.grid, section.grid-aanbevolen{
-    grid-template-columns:1fr 1fr;
-    grid-column-gap: 0.4em;
-    grid-row-gap: 0.4em;
-    transition:0.9s;
-  }
-
   h1{
     font-size: 1.1em;
     color: #003082;
@@ -307,43 +324,38 @@ nav a{
     z-index: 2;
   }
 
-  h2{
-    font-size: 1.5em;
+  section.grid, section.grid-aanbevolen{
+    grid-template-columns:1fr 1fr;
+    grid-column-gap: 0.4em;
+    grid-row-gap: 0.4em;
+    transition:0.9s;
   }
-
-  #aanbevolen{
-    display:contents;
-  }
-
 
   section.form-index{
     grid-column:1;
     grid-row:2;
   }
-
-  .item-a{
+  article:nth-of-type(1) {
     grid-column: 1;
     grid-row: 1;
   }
-
-  .item-b{
+  article:nth-of-type(2){
     grid-column:1;
-    grid-row:3;
+    grid-row:2;
   }
-  .item-c{
+  article:nth-of-type(3){
     grid-column:2;
-    grid-row:3;
+    grid-row:2;
   }
-  .item-d{
+  article:nth-of-type(4){
     grid-column:2;
     grid-row:1;
   }
-
-  .item-d>img{
+  article:nth-of-type(4)>img{
     max-width: 10%;
   }
   /* blok in hoofdscherm*/
-  .item-e{
+  article:nth-of-type(5){
     grid-column:2;
     grid-row:3;
   }
@@ -353,14 +365,14 @@ nav a{
     font-size:0.9em;
   }
 
-  #navi-bar{
+  header>nav{
     position:absolute;
     background: none;
     top:0;
     z-index:0;
   }
 
-  nav>ul>form>input[type=text]{
+  nav>ul>form>input[type='text']{
     display:inline;
   }
 
@@ -374,18 +386,51 @@ nav a{
     margin-right: 0.2;
   }
 
-  #weguitmenu{
-    display:none;
-  }
-  #zoekhoofd{
-    display:contents;
-    background-color: white;
-  }
   .vergrootglas{
     display:contents;;
     height:1em;
     width: 1em;
     margin-right: 0.4em;
+  }
+
+  #weguitmenu{
+    display:none;
+  }
+  #aanbevolen{
+    display:contents;
+  }
+
+  #directsearch{
+    display:contents;
+    background-color: white;
+    margin-bottom: 1em;
+  }
+
+  #searchdropdown{
+    display: block!important;
+    position: absolute;
+    top: 1.5em;
+    margin-left: 1.4em;
+    width: 6.5em;
+    opacity: 0;
+    transition: all .3s;
+}
+
+  #searchdropdown li{
+    padding: .6em;
+    background-color: #fff;
+    display:block;
+    font-size: .5em;
+  }
+
+  #searchdropdown a{
+    padding:0;
+  }
+  .searchdropdownAAN{
+    opacity: 1!important;
+  }
+  strong{
+    font-family:'nssans-bold';
   }
 
   /*formulier aanmeldpagina */
@@ -403,7 +448,7 @@ nav a{
 
 @media (min-width:50em){
 
-  h2{
+  h1{
     font-size: 1.2em;
   }
   /*grid site*/
@@ -420,33 +465,32 @@ nav a{
     grid-row:1;
   }
 
-  .item-a{
+  article:nth-of-type(1){
     grid-column: 1 / 2;
     grid-row:1/ span 2;
   }
-
-  .item-b{
+  article:nth-of-type(2){
     grid-column: 2 / 3;
     grid-row:1/ span 2;
   }
-  .item-c{
+  article:nth-of-type(3){
     grid-column: 3/ 4;
     grid-row: 2;
   }
-  .item-d{
+  article:nth-of-type(4){
     grid-column: 3/ 4;
     grid-row: 1;
   }
   /* blok in hoofdscherm*/
-  .item-e{
+  article:nth-of-type(5){
     grid-column: 1/ 2;
     grid-row: 3;
   }
-  .item-f{
+  article:nth-of-type(6){
     grid-column: 2/ 3;
     grid-row: 3;
   }
-  .item-g{
+  article:nth-of-type(7){
     grid-column: 3/ 4;
     grid-row: 3;
   }
@@ -465,7 +509,7 @@ nav a{
   }
 }
 
-/* formulier index*/
+/* formulier index pagina*/
 .form-index{
   background: linear-gradient(rgba(255,201,23,.9) 0,#ffc917);
   padding:1.4rem;
@@ -488,9 +532,13 @@ nav a{
 .form-index>fieldset>p{
   margin-bottom: 1em;
 }
+.form-index>fieldset>select{
+  display: block;
+  margin-top: 1em;
+}
 
 /*knop aanmeldformulier*/
-.aanmeld-formulier input[type=submit] {
+.aanmeld-formulier input[type='submit'] {
     background-color: #0079d3;
     box-shadow: inset 0 -0.125rem 0 #005ca0;
     color: white;
@@ -501,101 +549,54 @@ nav a{
     transition: box-shadow .15s ease-in-out;
 }
 
-.aanmeld-formulier input[type=submit]:hover{
+.aanmeld-formulier input[type='submit']:hover{
     color: #fff;
     cursor: pointer;
     box-shadow: inset 0 -3.125rem 0 #005ca0;
 }
 
+/* .aanmeld-formulier input[type='submit']:active{
+  transform: scale(0.9, 0.9);
+} */
+
+
 /* form verhalenpagina */
 .formverhaal{
   background: linear-gradient(rgba(255,201,23,.9) 0,#ffc917);
+  margin:2em;
   padding:1.4rem;
   color: #003082;
   font-size:0.7em;
+  overflow:hidden;
+  justify-content: space-between;
+  width: calc(100% - 4em);
 }
 
 .formverhaal>fieldset>legend{
-    font-size: 1.5em;
-    margin-bottom: 1em;
+    font-size: 1.2em;
 }
 
-.formverhaal>fieldset>.nsblok{
-  display:inline-block;
-  font-size:0.7em;
+.formverhaal>.nsblok{
+  font-size:1em;
   border: none;
-  margin-top: 0.5em;
+  height:3em;
 }
 
-.formverhaal>fieldset>label>input[type=radio]{
-  display:inline-block;
-  margin-right:1.5em;
-  margin-bottom:1.5em;
-}
-
-
-
-/*blok blauw ns
-bron: https://www.ns.nl
-gemaakt door ... */
-
-.nsblok{
+.formverhaal>fieldset>label>input[type='radio']{
   display:block;
-  position: relative;
-  color: #fff;
-  line-height: 1.4rem;
-  font-size: 1rem;
-  border: none;
-  padding: 0.5rem;
-  padding-left: 1em;
-  transition: box-shadow .15s ease-in-out;
-
+  float:left;
 }
 
-.nsblok:hover{
-      color: #fff;
-      cursor: pointer;
-      box-shadow: inset 0 -3.125rem 0 #005ca0;
-  }
-
-
-/*hartje
-bron: https://css-tricks.com/examples/ShapesOfCSS/
-gemaakt door Nicolas Gallagher*/
-
-span{
-  float:right;
-}
-
-.heart {
-    position: relative;
-    width: 100px;
-    height: 90px;
-}
-.heart:before,
-.heart:after {
-    position: absolute;
-    content: "";
-    left: 20px;
-    top: 0;
-    width: 20px;
-    height: 33px;
-    background: red;
-    -moz-border-radius: 20px 20px 0 0;
-    border-radius: 20px 20px 0 0;
-            transform: rotate(-45deg);
-            transform-origin: 0 100%;
-}
-.heart:after {
-    left: 0;
-            transform: rotate(45deg);
-            transform-origin :100% 100%;
+.formverhaal>fieldset>label{
+  display:block;
+  padding-top:1em;
 }
 
 
 /* rangeSlider code van https://css-tricks.com/value-bubbles-for-range-inputs/           met aanpassingen*/
 /*staaf*/
 #range-slider__range {
+  -webkit-appearance: none;
   width: calc(100% - (7em));
   height: 0.5em;
   border-radius: 0.2em;
@@ -605,9 +606,9 @@ span{
   margin: 0;
 }
 #range-slider__range::-webkit-slider-thumb {
-
-  width: 10em;
-  height: 10em;
+  -webkit-appearance: none;
+  width: 1.5em;
+  height: 1.5em;
   border-radius: 50%;
   background: #2c3e50;
   cursor: pointer;
@@ -617,6 +618,7 @@ span{
 
 /*bolletje*/
 #range-slider__range::-moz-range-thumb {
+  -moz-appearance: none;
   width: 1.5em;
   height: 1.5em;
   border: 0;

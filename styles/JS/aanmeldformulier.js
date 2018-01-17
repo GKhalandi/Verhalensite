@@ -1,8 +1,9 @@
-var kn = document.querySelector(".knop");
-kn.addEventListener("click", toggleHide);
+// aanmeldformulier toevoegen/verwijderen
 
-function toggleHide(){
-  document.querySelector('form:first-of-type').classList.add('hidden');
-  document.querySelector('form:last-of-type').classList.remove('hidden');
+var button = document.querySelector("#ACTIVEform");
+var element = document.querySelector("#aanmeldform");
 
-}
+button.addEventListener("click", function() {
+  console.log("clicked jay");
+  element.classList.toggle("aanmelden");
+});

@@ -11,64 +11,63 @@
 
   <body>
     <header>
-      <a href="index.html"><img class="logo" src="styles/Photo/ns_Logo.svg" alt="logo Nederlandse Spoorwegen"></a>
-      <h1>Verhalenplanner</h1>
-      <nav id="navi-bar">
-          <form>
-            <img class="vergrootglas" src="styles/Iconen/NSvergootglas.svg"><input id="zoekhoofd" for="search" type="text" name="search" placeholder="Zoeken..">
-          </form>
-          <ul>
-            <li id="weguitmenu"><a href="aanbevolen.html"><img  src="styles/Iconen/aanbevolen.svg" class="aanbevolenverhalen"  alt="Aanbevolen verhalen"><label>Aanbevolen</label></a></li>
-            <li id="weguitmenu"><a href="verhalenreeks.html"><img class="verhalenreeks" src="styles/Iconen/verhalenreeks.svg"  alt="Verhalenreeks"><label>Verhalenreeks</label></a></li>
-            <li><a href="verhalen.html"><img class="Bookicon" src="styles/Iconen/open-book.svg" alt="Verhalen"><label>Verhalen</label></a></li>
-            <li><a href="aanmelden-registeren.html"><img class="profielicon" src="styles/Iconen/NSprofiel2.svg" alt="Profiel"><label>Profiel</label></a></li>
+      <a href="index.html">
+        <img class="logo" src="styles/Photo/ns_Logo.svg" alt="logo Nederlandse Spoorwegen">
+      </a>
 
+      <nav >
+        <form>
+          <img class="vergrootglas" src="styles/Iconen/NSvergootglas.svg">
+          <input id="directsearch" type="text" name="search" placeholder="Zoeken..">
+          <ul id="searchdropdown">
+            <li><strong>Gefr</strong>ustreerd</li>
+            <li><strong>Gef</strong>aald</li>
+            <li><strong>Ge</strong>flopt</li>
           </ul>
-        </nav>
+        </form>
+        <ul>
+          <li id="weguitmenu"><a href="aanbevolen.html"><img  src="styles/Iconen/aanbevolen.svg" class="aanbevolenverhalen"  alt="Aanbevolen verhalen"><label>Aanbevolen</label></a></li>
+          <li id="weguitmenu"><a href="verhalenreeks.html"><img class="verhalenreeks" src="styles/Iconen/verhalenreeks.svg"  alt="Verhalenreeks"><label>Verhalenreeks</label></a></li>
+          <li><a href="verhalen.html"><img class="Bookicon" src="styles/Iconen/open-book.svg" alt="Verhalen"><label>Verhalen</label></a></li>
+          <li><a href="aanmelden-registeren.html"><img class="profielicon" src="styles/Iconen/NSprofiel2.svg" alt="Profiel"><label>Profiel</label></a></li>
+        </ul>
+      </nav>
     </header>
 
-  <section class="aanmeld-formulier">
-   <h2>Log in NS verhalenplanner</h2>
+    <section action="index.html" class="aanmeld-formulier">
+       <h1>Log in NS verhalenplanner</h1>
 
-    <form>
-     <fieldset>
-         <label> E-mailadres
-          <input type="email" name="email-address" placeholder="name@domain.com" required>
-         </label>
+        <form>
+             <label> E-mailadres
+              <input type="email" name="email-address" placeholder="name@domain.com" required>
+             </label>
 
-        <label>Wachtwoord
-          <input type="password" name="password" required>
-        </label>
+            <label>Wachtwoord
+              <input type="password" name="password" required>
+            </label>
 
-        <input type="submit" name="submit" value="Login">
+            <input type="submit" name="submit" value="Login">
 
-        <label id="remember">Blijf ingelogd
-          <input type="checkbox" name="remember">
-        </label>
+            <label id="remember">Blijf ingelogd
+              <input type="checkbox" name="remember">
+            </label>
+       </form>
+       <a id="ACTIVEform">Nog geen account?</a>
+      </section>
 
-        <a class="knop">Nog geen account?</a>
-
-     </fieldset>
-   </form>
-  </section>
-
-
-  <!-- <div id="aanmeldform"> -->
-    <section class="aanmeld-formulier hidden">
-     <h2>Aanmelden NS Planner</h2>
+  <div id="aanmeldform">
+    <section class="aanmeld-formulier">
+     <h1>Aanmelden NS Planner</h1>
 
       <form>
        <fieldset>
+           <legend>Gebruikersgegevens</legend>
            <label>Naam
             <input type="text" name="username" placeholder="Jan" required>
            </label>
 
            <label>Achternaam
             <input type="text" name="username" placeholder="Janssen" required>
-           </label>
-
-           <label>E-mailadres
-             <input type="email" name="email-address" placeholder="name@domain.com" required />
            </label>
 
            <label>Vrouw
@@ -82,7 +81,12 @@
            <label>Voer hier een foto in
             <input type="file" name="file">
            </label>
-
+         </fieldset>
+         <fieldset>
+            <legend>Accountgegevens</legend>
+           <label>E-mailadres
+             <input type="email" name="email-address" placeholder="name@domain.com" required />
+           </label>
 
            <label>Wachtwoord
               <input type="password" name="password" required>
@@ -99,7 +103,7 @@
      </form>
 
     </section>
-  <!-- </div> -->
+  </div>
 
 
   <script src="./styles/JS/aanmeldformulier.js"></script>

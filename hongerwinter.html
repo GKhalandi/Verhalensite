@@ -15,9 +15,8 @@
   <body>
     <header>
       <a href="index.html"><img class="logo" src="styles/Photo/ns_Logo.svg" alt="logo Nederlandse Spoorwegen"></a>
-      <h1>Verhalenplanner</h1>
 
-    <nav id="navi-bar">
+    <nav >
         <form>
           <img class="vergrootglas" src="styles/Iconen/NSvergootglas.svg"><input id="zoekhoofd" for="search" type="text" name="search" placeholder="Zoeken..">
         </form>
@@ -32,7 +31,17 @@
     </header>
 
 <section class="verhalen">
-  <input class="button" type="submit" name="submit" value="+ Toevoegen">
+
+  <button class="liken">
+    <img id="heartje" src="./styles/Iconen/heartje.png" alt="Vind ik leuk button" />
+    <span>Like</span>
+  </button>
+
+  <button class="Add">
+        <img id="toevoegen" src="./styles/Iconen/toevoegen.png" alt="toevoegen" />
+        <span>Toevoegen</span>
+  </button>
+
   <img id="achtergrondhongerwinter2" src="styles/Photo/honger2.png" alt="achtergrond hongerwinter">
 
 
@@ -72,6 +81,7 @@
 <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
 <script src="./styles/JS/jquery.eraser.js"></script>
 <script src="./styles/JS/script.js"></script>
+<script src="./styles/JS/like.js"></script>
 
 
   </body>
