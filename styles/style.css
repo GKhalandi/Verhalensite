@@ -400,7 +400,7 @@ header>nav{
     display:contents;
   }
 
-  #directsearch{
+  nav>form>input[type='text']{
     display:contents;
     background-color: white;
     margin-bottom: 1em;

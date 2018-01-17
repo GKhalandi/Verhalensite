@@ -2,6 +2,60 @@
 
 p{
   line-height:1.7em;
+  color:#fff;
+  z-index:10;
+}
+
+button.liken{
+    position: absolute;
+    background-color:#ff4c4c;
+    border: none;
+    color:#fff;
+    padding: 0.45em;
+    cursor: pointer;
+    line-height: 1.1em;
+    font-size: 1em;
+    z-index:4;
+    top: 30%;
+    left: 90%;
+}
+button.liken:active{
+    position: absolute;
+    transform: scale(0.9, 0.9);
+}
+img#heartje{
+  float:left;
+  width:1.1em;
+  height:1.1em;
+  margin-right: 0.45em;
+  height:10%;
+}
+
+button.Add{
+    position: absolute;
+    background-color:#00BFFF;
+    border: none;
+    color: white;
+    padding: 0.35em;
+    cursor: pointer;
+    font-size: 1em;
+    top: 29.9%;
+    left: 77%;
+    z-index:4;
+}
+button.Add:active{
+    position: absolute;
+    transform: scale(0.9, 0.9);
+}
+img#toevoegen{
+  float:left;
+  width:1.3em;
+  height:1.3em;
+  margin-right: 0.35em;
+}
+
+.isLiked {
+  background-color: #003082 !important;
 }
 
 @media (min-width:20em){
@@ -14,6 +68,19 @@ p{
       top: 10%;
       width:100%;
     }
+
+    button.liken{
+        top: 24%;
+        left: 86%;
+        font-size: 0.5em;
+    }
+
+    button.Add{
+        font-size: 0.5em;
+        top: 17.9%;
+        left: 77%;
+    }
+
 
     #scheur1, #scheur2, #scheur3, #scheur4, #scheur5, #scheur6, #scheur7,#scheur8{
       display:none;
@@ -131,6 +198,18 @@ p{
 }
 
 @media (min-width:30em){
+
+  button.liken{
+    top: 23%;
+    left:90%;
+    font-size: 0.7em;
+  }
+
+  button.Add{
+    top: 16%;
+    left: 85%;
+    font-size: 0.7em;
+  }
 
   .gefrustreerd{
     width:100%;
@@ -571,5 +650,21 @@ p{
         left:30%;
         color:white;
       }
+
+      button.liken{
+          line-height: 1.1em;
+          font-size: 1em;
+          top: 30%;
+          left: 90%;
+      }
+
+      button.Add{
+          font-size: 1em;
+          top: 29.9%;
+          left: 77%;
+
+      }
+
+
 
 }
