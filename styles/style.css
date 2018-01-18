@@ -123,6 +123,7 @@ article>footer>small{
   display:flex;
   justify-content: space-between;
   align-items:baseline;
+  font-size: 0.6em;
 }
 
 @media (min-width:20em) {
